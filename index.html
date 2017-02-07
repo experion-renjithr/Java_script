@@ -1,3 +1,9 @@
+<!-- 
+Change html content
+Change tag styles
+using functions
+using external script files
+ -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,16 +11,17 @@
 		Learn Javascript
 	</title>
 	<script type="text/javascript">
-		function myFun{
+		function myFun(){
 			document.getElementById("demo").innerHTML="new Content";
 		}
 	</script>
 </head>
 <body>
-	
 	<button onclick="document.getElementById('demo').style.display='none'">Hide</button>
 	<button onclick="document.getElementById('demo').style.display='block'">Show</button>
 	<button type="button" onclick="myFun()">Change</button>
+	<button type="button" onclick="myFunExt()">Change external</button>
 	<p id="demo">Change size</p>
+	<script src="externaljs.js"></script>
 </body>
 </html>
