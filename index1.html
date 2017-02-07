@@ -1,5 +1,6 @@
 <!-- 
-Understanding variables
+Understanding variables, objects and functions
+
  -->
 <!DOCTYPE html>
 <html>
@@ -12,6 +13,8 @@ Understanding variables
 <script src="myScript.js"></script>
 <script type="text/javascript">
 	document.getElementById("demo").innerHTML="I am "+person.firstname+" "+person.lastname;
+	document.write("fullname using function : "+person.fullname()+"<br>");
+	//document.write("Fullname using function : "+person.fullname());
 	document.write("res is : "+typeof(res)+"<br>");
 	res=x+y;
 	document.write(res+"<br>");
@@ -26,6 +29,10 @@ Understanding variables
 	document.write("Type of flag is : "+typeof(flag)+"<br>");
 	document.write("Type of person is : "+typeof(person)+"<br>");
 </script>
-
+<hr>
+<input id="n1" type="text" name="">
+<input id="n2" type="text" name="">
+<button id="add" onclick="myfn()">Add</button>
+<input id="result" type="text" name="">
 </body>
 </html>
