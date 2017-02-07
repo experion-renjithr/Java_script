@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Learn Javascript
+	</title>
+	<script type="text/javascript">
+		function myFun{
+			document.getElementById("demo").innerHTML="new Content";
+		}
+	</script>
+</head>
+<body>
+	
+	<button onclick="document.getElementById('demo').style.display='none'">Hide</button>
+	<button onclick="document.getElementById('demo').style.display='block'">Show</button>
+	<button type="button" onclick="myFun()">Change</button>
+	<p id="demo">Change size</p>
+</body>
+</html>
